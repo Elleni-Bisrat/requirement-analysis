@@ -111,24 +111,69 @@ It focuses on capturing the **functional requirements** of the system by showing
 
 ---
 
-### Example: Booking Management System
+### Example:## Movie Ticket Booking System
 
-In this booking system, there are two main actors:
-- **User (Customer):** Can search, book, modify, or cancel a booking.  
-- **Admin:** Can manage bookings, view reports, and oversee system operations.  
+In this system, there are four main actors:
 
-**Use Cases include:**  
-- Create Booking  
-- View Availability  
-- Modify Booking  
-- Cancel Booking  
-- Receive Notifications  
-- Manage Bookings (Admin)  
-- Generate Reports (Admin)  
+- **System Admin**: Can manage users, customers, bookings, payments, seats, and shows.  
+- **System User**: Can log in/out, update profile, change password, view movies, book tickets, make payments, and download tickets.  
+- **Hall Owner**: Can create shows, collect payments, and manage related booking activities.  
+- **Customer**: Can view movie details, book tickets, make payments, and download tickets.  
 
 ---
 
-### Use Case Diagram
+### Use Cases include:
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f5cd6ec5-770d-4c47-80cb-10db517f70ac" />
+- **Manage Users and Full Application** (Admin)  
+- **Manage Customer** (Admin)  
+- **Manage Booking** (Admin, System User)  
+- **Manage Payment** (Admin, System User)  
+- **Manage Seats** (Admin)  
+- **Manage Shows** (Admin, Hall Owner)  
+- **Login and Logout from System** (System User, Admin)  
+- **Update My Profile** (System User, Admin, Customer)  
+- **Change Account Password** (System User, Admin, Customer)  
+- **Book Tickets** (System User, Customer)  
+- **View Movie Details** (System User, Customer)  
+- **Create Shows** (Hall Owner)  
+- **Collect Payments** (Hall Owner)  
+- **Make Payment** (System User, Customer)  
+- **Download Ticket** (System User, Customer)  
+
+
+### Use Case Diagram
+The obtained general use case diagram is:
+
+<img width="815" height="680" alt="alx-booking-uc" src="https://github.com/user-attachments/assets/86715588-5f40-4c6a-a89d-550eca80b9ed" />
+
+## Acceptance Criteria
+
+### Importance of Acceptance Criteria in Requirement Analysis
+Acceptance Criteria are the conditions that a software product must satisfy to be accepted by a user, customer, or stakeholder. They define the boundaries of a user story or requirement and ensure clarity for both the development team and stakeholders.  
+
+Well-written acceptance criteria:
+- Provide a clear understanding of the scope of a requirement.  
+- Reduce ambiguity and misunderstandings between stakeholders and developers.  
+- Act as a basis for test cases to validate functionality.  
+- Help determine when a feature is “done.”  
+
+By defining acceptance criteria early in the requirement analysis phase, teams can ensure alignment with user needs and business goals, improving the quality and usability of the system.  
+
+---
+
+### Example: Checkout Feature (Booking Management System)
+**Feature:** Checkout Process  
+
+**Acceptance Criteria:**
+1. The system must allow the user to review their booking details before confirming.  
+2. The user must be able to select a payment method (e.g., credit card, PayPal, or mobile payment).  
+3. The system must validate payment details before processing.  
+4. A confirmation page must be displayed after a successful checkout with booking details and transaction ID.  
+5. The system must send a booking confirmation notification (via email/SMS) to the user after checkout.  
+6. If the payment fails, the system must display an error message and allow the user to retry.  
+
+These criteria ensure that the checkout process is user-friendly, reliable, and aligned with both customer and business requirements.
+
+
+
 
