@@ -144,7 +144,8 @@ In this system, there are four main actors:
 ### Use Case Diagram
 The obtained general use case diagram is:
 
-<img width="1095" height="712" alt="alx-booking-uc (1)" src="https://github.com/user-attachments/assets/bde936a4-1b59-40ce-8f46-06617206436d" />
+<img width="1095" height="712" alt="_alx-booking-uc" src="https://github.com/user-attachments/assets/2efc78bb-2ffa-4fc6-a9a9-7f0e4746eb7d" />
+
 
 
 ## Acceptance Criteria
